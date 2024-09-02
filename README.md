@@ -18,7 +18,8 @@ C# F# 所依赖的库也都是列在项目文件里而不是 代码 里;
     ['common.cs'],
     ['/unsafe'],
     ['/r:log4net.dll'], 
-    ['main', ' Console.WriteLine("hello,world,"+XXX.YYY); ']
+    ['bindingRedirect', 'System.Runtime.CompilerServices.Unsafe', 'b03f5f7f11d50a3a', '6.0.0.0', ], # 设定 app.config 的 bindingRedirect
+    ['main', ' Console.WriteLine("hello,world,"+XXX.YYY); '],
 ]
 */
 //对于 fs是 (*#!python  *)
